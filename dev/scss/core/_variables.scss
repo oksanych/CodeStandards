@@ -1,0 +1,47 @@
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+// Breakpoints
+// --------------------------
+$screen-xs: 480px !default;
+$screen-sm: 768px !default;
+$screen-md: 992px !default;
+$screen-lg: 1200px !default;
+$screen-xlg: 1600px !default;
+
+// Colors
+// --------------------------
+
+// Black
+$black: #000;
+
+// White
+$white-smoke: #f2f2f2;
+$white: #fff;
+
+// Blue
+$blue: #0074D9;
+
+// Colors names
+// --------------------------
+
+// Font-family
+// --------------------------
+$fontPath: '../fonts/';
+$pathOpenSans: '';
+
+//Example
+// $openSansRegular: 'Open Sans', sans-serif;
+// $openSansBold: 'Open Sans Bold', sans-serif;
+
+// Font-size
+// --------------------------
+$font-size-12: 1.2rem;
+$font-size-14: 1.4rem;
+$font-size-16: 1.6rem;
+$font-size-18: 1.8rem;
+$font-size-20: 2rem;
+$font-size-24: 2.4rem;
+$font-size-30: 3rem;
+$font-size-36: 3.6rem;

@@ -1,0 +1,43 @@
+<div class="rules-wrapper">
+    <h2 class="title">@media</h2>
+
+    <div class="rules">
+        <ul class="list list--inner">
+            <li class="list__item">Insert @media to the selectors, and not vice versa.</li>
+            <li class="list__item">Don't put @media into each other.</li>
+            <li class="list__item">Prefer the path of mobile-first, avoid specifying the @media-condition max-width in
+                favor of min-width.
+            </li>
+            <li class="list__item">Write @media near each other, don't write selectors between them.</li>
+            <li class="list__item">Write the conditions for @media where you use @media, do not write conditions in
+                variables.
+            </li>
+        </ul>
+
+<pre class="line-numbers">
+    <code class="language-css">
+    .promo {
+      display: block;
+
+      // Right: the condition is clear, in the variable only the width
+      @media (min-width: $screen-md) {
+        display: none;
+
+        &__img {
+          ...
+        }
+      }
+
+      @media (min-width: $screen-lg) {
+        display: block;
+      }
+
+      // Wrong: the condition is entirely put into a variable (non-obviousness)
+      @media ($mobile-width) {
+        display: block;
+      }
+    }
+    </code>
+</pre>
+    </div>
+</div>

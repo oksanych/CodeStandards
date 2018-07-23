@@ -1,0 +1,16 @@
+.page-name {
+  align-items: center;
+  background: linear-gradient(to right, #f5f2f0, #fff);
+  height: 100px;
+  display: flex;
+  max-width: $screen-xlg;
+  margin: 0 auto 50px;
+  padding: 0 2rem;
+  color: #505050;
+  position: relative;
+
+  &__text {
+    font-size: 36px;
+    font-weight: bold;
+  }
+}

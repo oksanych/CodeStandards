@@ -1,0 +1,44 @@
+<div class="rules-wrapper">
+    <h2 class="title">Ampersand</h2>
+
+    <div class="rules">
+        <ul class="list list--inner">
+            <li class="list__item">Use the ampersand only before: separator of the BEM element, separator of the BEM
+                modifier, a pseudo-element or a pseudo-selector.
+            </li>
+            <li class="list__item">Never use an ampersand at the places of separation of word combinations of block
+                names, elements or modifiers (see example).
+            </li>
+            <li class="list__item">Never repeat an ampersand-written selector within one context.</li>
+        </ul>
+
+<pre class="line-numbers">
+    <code class="language-css">
+    .promo {
+
+      &:hover {     // Right: Ampersand before pseudo-class
+        ...
+      }
+
+      &__img {      // Right: Ampersand before of the element delimiter
+        ...
+      }
+
+      &__item {
+        &-link {    // Wrong: Ampersand in the place of word separation in the name of the element
+        ...
+        }
+      }
+
+      &-shower {    // Wrong: Ampersand in the place of wording in the name of the block
+        ...
+      }
+
+      &--large {    // Right: modifiers should be written below the elements
+        ...
+      }
+    }
+    </code>
+</pre>
+    </div>
+</div>

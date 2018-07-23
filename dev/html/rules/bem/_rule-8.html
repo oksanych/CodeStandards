@@ -1,0 +1,35 @@
+<div class="rules-wrapper">
+    <h2 class="title">Mixing - combining on one tag classes BEM-block and BEM-element</h2>
+
+    <p class="text">The combination is possible in any combination: BEM-block + BEM-element, BEM-block + BEM-block,
+        BEM-element + BEM-element.</p>
+
+    <div class="rules">
+        <ul class="list list--inner">
+            <li class="list__item">Classes of BEM blocks should be written first.</li>
+            <li class="list__item">Add some style properties needed only at the location of the addition (using the
+                modifier is irrational). Example: for .btn inside .page-header, an external left margin of 37 pixels is
+                required. You can add an additional class .page-header__btn for the .btn tag and indent with this
+                selector. This is a normal practice, you can safely use it.</li>
+        </ul>
+
+<pre class="line-numbers">
+    <code class="language-html">
+        &lt;!-- Example-1 --&gt;
+        &lt;div class="page-header"&gt;
+            &lt;div class="page-header__nav-wrap"&gt;...&lt;/div&gt;
+            &lt;a class="btn  page-header__btn" href="/buy"&gt;...&lt;/a&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Example-2 --&gt;
+        &lt;div class="slider"&gt;
+          &lt;div class="promo  slider__inner"&gt;
+            &lt;div class="promo__item  slider__item"&gt;
+              ...
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+    </code>
+</pre>
+    </div>
+</div>

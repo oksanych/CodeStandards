@@ -1,0 +1,57 @@
+// --------------------------------------------------
+// Typography
+// --------------------------------------------------
+
+// Links
+// --------------------------
+
+.link {
+  @include transition(color, 0.15s, linear);
+
+  &:hover,
+  &:active,
+  &:focus {
+
+  }
+}
+
+// Titles
+// --------------------------
+
+.title {
+  font-size: 30px;
+
+  &--main {
+    font-size: 36px;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+    text-shadow: 0 0 4px black;
+
+    span {
+      text-transform: uppercase;
+    }
+  }
+}
+
+.list {
+  margin: 0;
+  line-height: 1.4;
+
+  &--numeric {
+    list-style: decimal;
+  }
+
+  &--reset {
+    @extend %list-reset;
+  }
+
+  &--inner {
+    padding: 20px 20px 20px 40px;
+    border-right: 0.1rem solid #ddd;
+  }
+
+  &__item {
+    margin-bottom: 10px;
+  }
+}

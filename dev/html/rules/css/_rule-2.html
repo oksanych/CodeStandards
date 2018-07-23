@@ -1,0 +1,30 @@
+<div class="rules-wrapper">
+    <h2 class="title">Nesting of selectors</h2>
+
+    <div class="rules">
+        <ul class="list list--inner">
+            <li class="list__item">The less nesting levels, the better.</li>
+            <li class="list__item">Do not allow more than 3 levels of nesting (pseudo-elements, pseudo-selectors and
+                media-conditions are not considered to increase nesting).
+            </li>
+            <li class="list__item">Always add an empty line before the nested selector or @media.</li>
+            <li class="list__item">Always make an additional indentation for nested selectors.</li>
+        </ul>
+
+<pre class="line-numbers">
+    <code class="language-css">
+    .promo {
+      display: block;
+                        // empty line for better readability
+      &__link {         // first level of nesting
+        color: #ff0000;
+                        // empty line for better readability
+        &:hover {       // doesn't increase the level of nesting
+          ...
+        }
+      }
+    }
+    </code>
+</pre>
+    </div>
+</div>

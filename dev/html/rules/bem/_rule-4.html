@@ -1,0 +1,29 @@
+<div class="rules-wrapper">
+    <h2 class="title">Element is part of the BEM block</h2>
+
+    <div class="rules">
+        <ul class="list list--inner">
+            <li class="list__item">The name of the class is formed from the name of the block with the addition
+                of
+                __
+                and the name of the element.
+            </li>
+            <li class="list__item">The class name should be simple and short.</li>
+        </ul>
+
+<pre class="line-numbers">
+    <code class="language-html">
+    &lt;div class="product"&gt;
+        &lt;!-- .product__image — BEM-element of product block --&gt;
+        &lt;img class="product__image" src="..." alt="..."&gt;
+
+        &lt;!-- .product__description — BEM-element of product block --&gt;
+        &lt;p class="product__description"&gt;...&lt;/p&gt;
+
+        &lt;!-- .product__more-link — BEM-element of product block --&gt;
+        &lt;a class="product__more-link" href=""&gt;...&lt;/a&gt;
+    &lt;/div&gt;
+    </code>
+</pre>
+    </div>
+</div>

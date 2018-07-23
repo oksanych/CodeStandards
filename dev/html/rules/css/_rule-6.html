@@ -1,0 +1,33 @@
+<div class="rules-wrapper">
+    <h2 class="title">Sass placeholders</h2>
+
+    <div class="rules">
+        <ul class="list list--inner">
+            <li class="list__item">Placeholder selectors will not show up in the generated CSS, only the selectors that
+                extend them will be included in the output. You can create separate file with placeholders and called it
+                helpers and using this helpers in the project. For better understanding read this article -
+                <a href="http://thesassway.com/intermediate/understanding-placeholder-selectors" class="link">Understanding
+                    placeholder selectors</a>
+            </li>
+        </ul>
+
+        <pre class="line-numbers">
+    <code class="language-css">
+    %list-reset {
+      transition: background-color ease .2s;
+      margin: 0 .5em;
+    }
+
+    .product-list {
+      @extend %list-reset;
+      /* error specific styles... */
+    }
+
+    .user-list {
+      @extend %list-reset;
+      /* info specific styles... */
+    }
+    </code>
+</pre>
+    </div>
+</div>
